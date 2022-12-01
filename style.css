@@ -1,0 +1,237 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+   width: 1920pz;
+
+}
+
+.block-one {
+    margin: 0 auto 60px;
+    padding-top: 60px;
+    
+}
+
+.name-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.name-main span {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+}
+
+.turn {
+    display: flex;
+    margin: 0 auto 40px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 40px;
+}
+
+
+.block-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 600px;
+    margin: 0 auto;
+}
+.card {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-one{
+    border: 1px solid grey;
+}
+
+.card-two{
+    border: 1px solid grey;
+}
+
+.card-one:hover {
+    box-shadow: 0 0 15px grey;
+    background-color: rgb(228, 244, 255);
+    border: none;
+}
+
+.card-head:hover {
+    background-color: rgb(203, 235, 255);
+    
+}
+
+.card-two:hover {
+    box-shadow: 0 0 15px grey;
+    background-color: rgb(228, 244, 255);
+    border: none;
+}
+
+
+.card-head {
+    text-align: center;
+    padding: 40px 40px;
+    background-color: rgb(220, 241, 255);
+}
+
+.price {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price span:first-child {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.price span:last-child {
+    color: grey;
+}
+
+.name {
+   text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p {
+    color: grey;
+    text-align: center;
+}
+
+.include {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: grey;
+}
+ul li {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 0 auto;
+}
+
+button {
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:  #2500f9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.end {
+    margin: 20px 0 0;
+    text-align: center;
+    color: #2500f9;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    padding: 8px 12px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: black;
+  }
+  
+  
+  .slider:before {
+    position: absolute;
+    content: "Monthly";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 75px;
+    background-color: #2500f9;
+    -webkit-transition: .4s;
+    transition: .4s;
+  text-align: center;
+    color: white;
+    padding: 5px 10px;
+  }
+  .round {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 18px;
+  }
+ 
+  
+  input:checked + .slider {
+    background-color: white;
+    
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2500f9;
+    
+  }
+  
+  input:checked + .slider:before {
+    /* -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px); */
+    transform: translateX(105px);
+    content: "Annoally";
+    color: white;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 40px;
+  }
+
+  @media screen and (width-min: 2000px) {
+    .card-one{
+        width: 80%;
+        border: 1px solid grey;
+        height: 450px;
+    }
+  }
